@@ -16,6 +16,10 @@ class Product extends Component {
         return result;
     }
 
+    onAddToCart = product => {
+        this.props.onAddToCart(product);
+    }
+
     render() {
 
         let { product } = this.props;
@@ -46,7 +50,12 @@ class Product extends Component {
                         <div className="card-footer">
                             <span className="left">{ product.price.toLocaleString('en-IN') }$</span>
                             <span className="right">
-                                <a className="btn-floating blue-gradient" data-toggle="tooltip" data-placement="top" data-original-title="Add to Cart">
+                                <a className="btn-floating blue-gradient"
+                                   data-toggle="tooltip"
+                                   data-placement="top"
+                                   data-original-title="Add to Cart"
+                                   onClick={ () => { this.onAddToCart(product) } }
+                                >
                                   <i className="fa fa-shopping-cart" />
                                 </a>
                             </span>

@@ -32,6 +32,7 @@ let initialState = [
 const carts = (state = initialState, actions) => {
     switch (actions.type) {
         case types.ADD_TO_CART:
+            console.log(actions);
             return [...state];
         default: return state;
     }

@@ -11,11 +11,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CartResult.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/CartResult.js">
+      <file leaf-file-name="Product.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Product.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+            <state relative-caret-position="161">
+              <caret line="43" column="30" lean-forward="true" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductsContainer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/containers/ProductsContainer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-163">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="carts.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/reducers/carts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/actions/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -40,7 +70,7 @@
     </findStrings>
     <replaceStrings>
       <replace>alt=&quot;mdb-transparent&quot;</replace>
-      <replace />
+      <replace>&lt;a title=&quot;unknown&quot;</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\Xampp\htdocs\ReactJS-Redux-Carts\src</dir>
@@ -61,18 +91,18 @@
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/Products.js" />
         <option value="$PROJECT_DIR$/src/reducers/products.js" />
-        <option value="$PROJECT_DIR$/src/containers/ProductsContainer.js" />
         <option value="$PROJECT_DIR$/src/constants/ActionType.js" />
         <option value="$PROJECT_DIR$/src/actions/index.js" />
         <option value="$PROJECT_DIR$/src/reducers/cart.js" />
         <option value="$PROJECT_DIR$/src/reducers/index.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/CartItem.js" />
-        <option value="$PROJECT_DIR$/src/components/Product.js" />
         <option value="$PROJECT_DIR$/src/containers/CartContainer.js" />
         <option value="$PROJECT_DIR$/src/components/Carts.js" />
-        <option value="$PROJECT_DIR$/src/reducers/carts.js" />
         <option value="$PROJECT_DIR$/src/components/CartResult.js" />
+        <option value="$PROJECT_DIR$/src/reducers/carts.js" />
+        <option value="$PROJECT_DIR$/src/containers/ProductsContainer.js" />
+        <option value="$PROJECT_DIR$/src/components/Product.js" />
       </list>
     </option>
   </component>
@@ -122,6 +152,12 @@
               <item name="ReactJS-Redux-Carts" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReactJS-Redux-Carts" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="constants" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="ReactJS-Redux-Carts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReactJS-Redux-Carts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="containers" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -138,7 +174,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ticket_platform" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ReactJS-Redux" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
@@ -176,16 +212,15 @@
       <workItem from="1528990292799" duration="4640000" />
       <workItem from="1528995255518" duration="2435000" />
       <workItem from="1529030300467" duration="16566000" />
-      <workItem from="1529079217679" duration="2189000" />
+      <workItem from="1529079217679" duration="4390000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26019000" />
+    <option name="totallyTimeSpent" value="28220000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -274,23 +309,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Products.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/prop-types/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/ActionType.js" />
-    <entry file="file://$PROJECT_DIR$/src/actions/index.js" />
-    <entry file="file://$PROJECT_DIR$/src/containers/ProductsContainer.js" />
     <entry file="file://$PROJECT_DIR$/src/reducers/index.js" />
-    <entry file="file://$PROJECT_DIR$/src/constants/Message.js" />
     <entry file="file://$PROJECT_DIR$/src/App.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/Product.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="46" column="89" selection-start-line="46" selection-start-column="89" selection-end-line="46" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Carts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -302,13 +325,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/carts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -332,7 +348,51 @@
     <entry file="file://$PROJECT_DIR$/src/components/CartResult.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Products.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/ActionType.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/Message.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/ProductsContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-163">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/carts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="43" column="30" lean-forward="true" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
         </state>
       </provider>
     </entry>
