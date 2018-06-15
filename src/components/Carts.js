@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import CartResult from './CartResult';
 
 class Carts extends Component {
     render() {
@@ -24,7 +23,6 @@ class Carts extends Component {
                         { children }
 
                         {/* Cart Result */}
-                        <CartResult />
                         </tbody>
                     </table>
                 </div>

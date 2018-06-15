@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import * as Message from '../constants/Message'
 import Carts from '../components/Carts';
 import CartItem from '../components/CartItem'
+import CartResult from '../components/CartResult'
 
 class CartContainer extends Component {
 
@@ -21,6 +22,14 @@ class CartContainer extends Component {
         return result;
     }
 
+    showTotalAmount = carts => {
+        let result = [];
+        if (carts.length) {
+            result = <CartResult carts={ carts } />
+        }
+        return result;
+    }
+
     render() {
 
         let { carts } = this.props;
@@ -28,6 +37,7 @@ class CartContainer extends Component {
         return (
             <Carts>
                 { this.showCartItem(carts) }
+                { this.showTotalAmount(carts) }
             </Carts>
         );
     }

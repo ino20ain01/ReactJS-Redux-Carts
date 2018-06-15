@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class CartItem extends Component {
 
     showSubTotal = (quantity, price) => {
-        return (quantity * price).toLocaleString();
+        return (quantity * price).toLocaleString('en-IN');
     }
 
     render() {
