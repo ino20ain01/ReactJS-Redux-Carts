@@ -25,7 +25,7 @@ class ProductsContainer extends Component {
             </Products>
         );
     }
-} 
+}
 
 ProductsContainer.propTypes = {
     products: PropTypes.arrayOf(
