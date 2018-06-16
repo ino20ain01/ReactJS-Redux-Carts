@@ -4,7 +4,13 @@ class Carts extends Component {
     render() {
 
         let { children } = this.props;
-
+        if (typeof children[0] === 'string') {
+            children = (
+                <tr>
+                    <td colSpan="6" style={{ textAlign: 'center', }}>{ children }</td>
+                </tr>
+            );
+        }
         return (
             <section className="section">
                 <div className="table-responsive">
@@ -20,8 +26,8 @@ class Carts extends Component {
                         </tr>
                         </thead>
                         <tbody>
+                        {/*{ children }*/}
                         { children }
-
                         {/* Cart Result */}
                         </tbody>
                     </table>

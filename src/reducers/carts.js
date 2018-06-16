@@ -1,38 +1,37 @@
 import * as types from './../constants/ActionType';
 
-// let data = JSON.parse(localStorage.getItem('CART'));
-// let initialState = data ? data : [];
-let initialState = [
-    {
-        product: {
-            id: 1,
-            name: 'IPhone 7 Plus',
-            image: 'http://yerevanmobile.am/wp-content/uploads/2016/12/1-4.png',
-            description: 'Sản phẩm do Apple sản xuất',
-            price: 500,
-            inventory: 10,
-            rating: 4
-        },
-        quantity: 69
-    },
-    {
-        product: {
-            id: 2,
-            name: 'IPhone 8',
-            image: 'https://johnsen.no/assets/img/1024/1024/bilder_nettbutikk/ee9f9269d839011cfdb5266b72e622e9-image.jpeg',
-            description: 'Sản phẩm do Apple sản xuất',
-            price: 600,
-            inventory: 11,
-            rating: 4
-        },
-        quantity: 6
+let data = JSON.parse(localStorage.getItem('CART'));
+let initialState = data ? data : [];
+
+let findProductInCart = (carts, product) => {
+    let index = -1;
+    if (carts.length) {
+        for (let i = 0; i < carts.length; i++) {
+            if (carts[i].product.id === product.id) {
+                index = i;
+                break;
+            }
+        }
     }
-];
+    return index;
+};
 
 const carts = (state = initialState, actions) => {
+
+    let { product, quantity } = actions;
+    let index = -1;
     switch (actions.type) {
         case types.ADD_TO_CART:
-            console.log(actions);
+            index = findProductInCart(state, product);
+            if (index !== -1) {
+                state[index].quantity += quantity;
+            } else {
+                state.push({
+                    product,
+                    quantity
+                });
+            }
+            localStorage.setItem('CART', JSON.stringify(state));
             return [...state];
         default: return state;
     }
