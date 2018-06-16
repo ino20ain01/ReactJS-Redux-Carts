@@ -1,4 +1,4 @@
-import * as types from './../constants/ActionType';
+import * as Types from './../constants/ActionType';
 
 let data = JSON.parse(localStorage.getItem('CART'));
 let initialState = data ? data : [];
@@ -21,7 +21,7 @@ const carts = (state = initialState, actions) => {
     let { product, quantity } = actions;
     let index = -1;
     switch (actions.type) {
-        case types.ADD_TO_CART:
+        case Types.ADD_TO_CART:
             index = findProductInCart(state, product);
             if (index !== -1) {
                 state[index].quantity += quantity;
