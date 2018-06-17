@@ -15,10 +15,18 @@ class CartItem extends Component {
         }
     }
 
+    onUpdateQuantity = (product, quantity) => {
+        let { onUpdateProductInCart, onChangeMessage } = this.props;
+        if (quantity) {
+            onUpdateProductInCart(product, quantity);
+            onChangeMessage(Mesage.MSG_UPDATE_CART_SUCCESS);
+        }
+    }
+
     render() {
 
-        let { item } = this.props;
-
+        let { item } = this.props,
+            { quantity } = item;
         return (
             <tr>
                 <th scope="row">
@@ -31,14 +39,18 @@ class CartItem extends Component {
                 </td>
                 <td>{ item.product.price.toLocaleString() }$</td>
                 <td className="center-on-small-only">
-                    <span className="qty">{ item.quantity } </span>
+                    <span className="qty">{ quantity } </span>
                     <div className="btn-group radio-group" data-toggle="buttons">
-                        <label className="btn btn-sm btn-primary
-                                          btn-rounded waves-effect waves-light">
+                        <label
+                            className="btn btn-sm btn-primary btn-rounded waves-effect waves-light"
+                            onClick={ () => this.onUpdateQuantity(item.product, item.quantity - 1) }
+                        >
                             <a>—</a>
                         </label>
-                        <label className="btn btn-sm btn-primary
-                                          btn-rounded waves-effect waves-light">
+                        <label
+                            className="btn btn-sm btn-primary btn-rounded waves-effect waves-light"
+                            onClick={ () => this.onUpdateQuantity(item.product, item.quantity + 1) }
+                        >
                             <a>+</a>
                         </label>
                     </div>
