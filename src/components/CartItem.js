@@ -1,9 +1,18 @@
 import React, {Component} from 'react';
+import * as Mesage from '../constants/Message'
 
 class CartItem extends Component {
 
     showSubTotal = (quantity, price) => {
         return (quantity * price).toLocaleString('en-IN');
+    }
+
+    onDelete = product => {
+        let { onDeleteProductInCart, onChangeMessage } = this.props;
+        if (product) {
+            onDeleteProductInCart(product);
+            onChangeMessage(Mesage.MSG_DELETE_PRODUCT_IN_CARTS_SUCCESS);
+        }
     }
 
     render() {
@@ -36,7 +45,14 @@ class CartItem extends Component {
                 </td>
                 <td>{ this.showSubTotal(item.quantity, item.product.price) }$</td>
                 <td>
-                    <button type="button" className="btn btn-sm btn-primary waves-effect waves-light" data-toggle="tooltip" data-placement="top" data-original-title="Remove item">
+                    <button
+                        type="button"
+                        className="btn btn-sm btn-primary waves-effect waves-light"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        data-original-title="Remove item"
+                        onClick={ () => this.onDelete(item.product) }
+                    >
                         X
                     </button>
                 </td>
